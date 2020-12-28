@@ -5,12 +5,17 @@ from email.message import EmailMessage
 from datetime import date
 
 
-def sendMail():
-    #setting smtp server with TLS port (SSL port wasn't working)
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     #turn on gmail 3rd party script permissions.
     server.login('sa718987@gmail.com', 'BahriaUniICC123')
+
+def sendMail():
+    #setting smtp server with TLS port (SSL port wasn't working)
+    # server = smtplib.SMTP('smtp.gmail.com', 587)
+    # server.starttls()
+    # #turn on gmail 3rd party script permissions.
+    # server.login('sa718987@gmail.com', 'BahriaUniICC123')
     email = EmailMessage()
     email['From'] = 'Sender_Email'
     email['To'] = "siffatahmed7@gmail.com"
