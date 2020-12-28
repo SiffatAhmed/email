@@ -8,7 +8,7 @@ from datetime import date
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 #turn on gmail 3rd party script permissions.
-server.login('sa718987@gmail.com', 'BahriaUniICC123')
+server.login('siffatahmed464@gmail.com', 'BahriaUniICC123')
 
 def sendMail():
     #setting smtp server with TLS port (SSL port wasn't working)
